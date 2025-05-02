@@ -1,0 +1,514 @@
+/* shrinks User Card to avoid overlapping with Server List */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Work+Sans:wght@400;700&family=Righteous&family=Kosugi&family=RocknRoll+One&family=Gothic+A1&family=Black+Han+Sans&family=PT+Sans+Caption&family=Russo+One&family=Palanquin+Dark&family=Raleway:wght@500&family=Commissioner&family=DM+Sans:wght@700&family=Mitr&family=Lalezar&display=swap');
+/** Fonts*/
+
+@font-face {
+    font-family: "Whitney";
+    font-weight: 300;
+    src: url(https://milbits.github.io/oldcord/src/assets/thin.woff2) format("woff2");
+}
+
+@font-face {
+    font-family: "Whitney";
+    src: url(https://milbits.github.io/oldcord/src/assets/normal.woff2);
+}
+
+@font-face {
+    font-family: "Whitney";
+    font-style: italic;
+    src: url(https://milbits.github.io/oldcord/src/assets/cursive.woff2);
+}
+
+@font-face {
+    font-weight: 500;
+    font-family: "Whitney";
+    src: url(https://milbits.github.io/oldcord/src/assets/kindaBold.woff2);
+}
+
+@font-face {
+    font-family: "Whitney";
+    font-weight: 600;
+    src: url(https://milbits.github.io/oldcord/src/assets/bold.woff2) format("woff2");
+}
+
+@font-face {
+    font-weight: 700;
+    font-family: "Whitney";
+    src: url(https://milbits.github.io/oldcord/src/assets/veryBold.woff2);
+}
+
+@font-face {
+    font-weight: 700;
+    font-style: italic;
+    font-family: "Whitney";
+    src: url(https://milbits.github.io/oldcord/src/assets/cursiveBold.woff2);
+}
+
+code {
+    font-family: "Source Code Pro";
+}
+
+section[aria-label="User area"] {
+    left: var(--space-80) !important;
+    width: calc(80% - var(--space-xs)*2) !important;
+}
+
+/* extends the Server List to the bottom of the screen */
+nav[aria-label="Servers sidebar"] {
+    margin-bottom: 0 !important;
+}
+
+/* hides the Discover button in Server List */
+div:has( > div > div > svg > foreignObject > div[aria-label="Discover"]) {
+    display: none !important;
+}
+
+div[class*="title__"]{
+    display: none !important;
+    background-color: black !important;
+}
+
+div[class*="bar_c"]{
+    background-color: #202020 !important;
+}
+
+div[class*="circleIconButton__5bc7e"]{
+    z-index: 10 !important;
+}
+
+/* extends the Server List to the bottom of the screen */
+div[aria-label="Servers"] {
+    overflow: hidden scroll !important;
+    scrollbar-width: none;
+}
+
+div[class*="stack_dbd263"]{
+    background-color: #202020 !important;
+}
+
+/* server list */
+.base_c48ade .sidebar_c48ade > .guilds_c48ade {
+    width: 80px;
+    background: var(--background-tertiary);
+	.scroller_ef3116 {
+		padding-top: 2px;
+	    > div[style]:not([class]) {
+	        min-height: 50px;
+		}
+		ul.stack_dbd263 {
+		    height: auto !important;
+		}
+    }
+    .guildSeparator__252b6 {
+      height: 2px;
+    }
+    .wrapper__48112 {
+		.expandedFolderBackground__48112 {
+		    left: 15px;
+	        width: 50px;
+	        bottom: 4px;
+	        border-radius: 16px 16px 25px 25px;
+	        background: var(--background-modifier-accent);
+	        border: none;
+		}
+	    .folder__48112 {
+	        margin-left: -5px;
+	        margin-top: -4px;
+		}
+	    .folderIconWrapper__48112, .folder__48112 {
+	        width: 50px;
+	        height: 50px;
+	        overflow: hidden;
+	        border-radius: 16px;
+			--bg-mod-subtle: rgba(114, 137, 218, 0.4) !important;
+		}
+		.iconSizeMini_f34534 {
+			width: 16px;
+			height: 16px;
+		}
+	    .expandedFolderIconWrapper__48112 {
+	        margin: 0;
+	        width: 50px;
+	        height: 50px;
+	        > svg {
+			    width: 24px;
+			    height: 24px;
+		    }
+	    }
+	    .closedFolderIconWrapper__48112 .guildIcon__48112 {
+	        border-radius: 32px !important;
+		}
+	    gap: 8px !important;
+	}
+	.listItem__650eb:has(.circleIcon__5bc7e) {
+		.circleIconButton__5bc7e {
+			border-radius: 50%;
+			width: 48px;
+			height: 48px;
+		}
+	}
+	.guildsError_e8d03f {
+		width: 50px;
+	    height: 50px;
+	    background: (rgba(240,71,71,.1));
+	    border-color: var(--red);
+		&:hover {
+	    	background: var(--red);
+		}
+	}
+	.unreadMentionsIndicatorBottom_ef3116 {
+		margin-left: 4px;
+	}
+	.mention__3b95d {
+		box-sizing: border-box;
+		opacity: .9;
+		border: unset;
+		box-shadow: unset;
+	}
+}
+.sidebar_c48ade:after {
+	display: none;
+}
+.base_c48ade .sidebar_c48ade > .guilds_c48ade {
+	width: 72px;
+	background: var(--background-tertiary);
+	.scroller_ef3116 {
+		padding-top: 2px;
+		gap: 4px !important;
+		ul.stack_dbd263 {
+			height: auto !important;
+		}
+	}
+	.listItem__650eb:has(.guildSeparator__252b6) {
+		margin: 6px 0 8px 0;
+	}
+	.listItem__650eb {
+		margin: 0 0 0px;
+	}
+	.guildSeparator__252b6 {
+		height: 2px;
+	}
+	.folderIcon__48112 {
+		margin-top: 0px;
+		& svg {
+			width: 24px;
+			height: 24px;
+		}
+	}
+}
+	.folderGroup__48112 {
+		--custom-folder-preview-padding: 6px;
+		--custom-folder-color: #7289da;
+	}
+	.folderGroup__48112:not(.isExpanded__48112) .folderIcon__48112 svg{
+		display: none
+	}
+	.folderGroupBackground__48112 {
+			left: 11px;
+			width: 48px;
+			bottom: 4px;
+			border-radius: 16px 16px 25px 25px;
+			background: var(--background-modifier-accent);
+			border: none;
+	}
+	.folderButtonContent__48112 {
+			margin-left: -5px;
+			margin-top: -4px;
+		}
+	.folderIconWrapper__48112 {
+			width: 48px;
+			height: 48px;
+			overflow: hidden;
+			border-radius: 16px;
+			--bg-mod-subtle: rgba(114, 137, 218, 0.4) !important;
+		}
+	.expandedFolderIconWrapper__48112 {
+		margin: 0;
+		width: 48px;
+		height: 48px;
+	}
+	.folderGroup__48112:is(.isExpanded__48112) .folderPreviewWrapper__48112 {
+		display: none;
+	}
+	.folderPreviewGuildIcon__48112 {
+		border-radius: 32px !important;
+	}
+
+	.listItem__650eb:has(.circleIcon__5bc7e) {
+		margin: 6px 0 0;
+		.circleIconButton__5bc7e {
+			border-radius: 50%;
+			width: 48px;
+			height: 48px;
+		}
+	}
+	.guildsError_e8d03f {
+		width: 48px;
+		height: 48px;
+		background: (rgba(240, 71, 71, 0.1));
+		border-color: var(--red);
+		&:hover {
+			background: var(--red);
+		}
+	}
+	.mention__3b95d {
+		box-sizing: border-box;
+		opacity: 0.9;
+		border: unset;
+		box-shadow: unset;
+		right: 1px;
+	}
+}
+.sidebar_c48ade:after {
+	display: none;
+}
+.visual-refresh {
+
+	.childWrapperNoHoverBg__6e9f8 {
+		background-color: var(--background-primary);
+	}
+	.wrapper_cc5dd2,
+	.childWrapper__6e9f8,
+	.icon__6e9f8 {
+		width: 50px !important;
+		height: 50px !important;
+	}
+	.wrapper_cc5dd2 > .svg_cc5dd2 {
+		inset: auto;
+		contain: none;
+	}
+	.wrapper_cc5dd2 > .svg_cc5dd2 foreignObject {
+		mask: none;
+		overflow: visible;
+		x: -4;
+		y: -4;
+	}
+	.wrapper_cc5dd2 > .svg_cc5dd2 foreignObject[width="48"] {
+		x: 0;
+		y: 0;
+	}
+	.wrapper_cc5dd2 .wrapper__6e9f8 {
+		width: 48px;
+		height: 48px;
+		border-radius: 25px;
+		overflow: hidden;
+		transition: border-radius 0.2s ease;
+	}
+	.sidebarListRounded_c48ade {
+		border-top-left-radius: unset;
+	}
+    .panels_c48ade{
+        left: calc(var(--space-80) + 4px) !important;
+        right: calc(var(--space-80) + 4px) !important;
+    }
+	.menu_c1e9c4, .option__3f413, .popout__3f413 {
+		background: var(--background-floating);
+	    box-shadow: var(--shadow-high);
+	    border-radius: 4px;
+		border: none;
+	}
+	.scroller_c1e9c4, .labelContainer_c1e9c4 {
+		padding: 6px 8px;
+	}
+	.wrapper_f563df {
+		gap: unset;
+		padding: 4px 0 6px 2px;
+		.button_f563df {
+			border-radius: 50%;
+			width: 32px;
+		    height: 32px;
+		    padding: 4px;
+		}
+	}
+	.item_c1e9c4 {
+	    box-sizing: border-box;
+	    margin: 2px 0;
+	}
+	.colorDefault_c1e9c4 .label_c1e9c4 {
+		color: unset;
+	}
+	.colorDefault_c1e9c4:active:not(.hideInteraction_c1e9c4) {
+		background-color: var(--menu-item-default-active-bg);
+	}
+	.colorDefault_c1e9c4.focused_c1e9c4 {
+		border-radius: 2px;
+	}
+	.colorDanger_c1e9c4, .colorDanger_c1e9c4 .checkbox_c1e9c4, .colorDanger_c1e9c4 .radioSelection_c1e9c4 {
+		color: var(--status-danger);
+	}
+	.colorDanger_c1e9c4.focused_c1e9c4 {
+	    color: var(--white);
+	}
+	.colorDefault_c1e9c4.focused_c1e9c4:not(.checkboxContainer_c1e9c4) path {
+	    fill: var(--white);
+	}
+	.iconContainer_c1e9c4 {
+		width: 18px;
+		height: 18px;
+	}
+	.separator_c1e9c4 {
+		margin: 4px;
+	}
+	.iconContainer_c1e9c4 {
+		svg.radioIcon_c1e9c4 {
+			width: 16px;
+			height: 16px;
+			margin-top: 2px
+		}
+		.refreshIconFill__001a7 {
+			fill: transparent;
+			stroke: white;
+			stroke-width: 2;
+			r: 10;
+		}
+		.refreshIconStroke__001a7 {
+			stroke-width: 0;
+		}
+		.refreshIcon__001a7 {
+			fill: var(--blurple);
+			r: 6
+		}
+	}
+	.caret_c1e9c4 {
+		width: 16px;
+		height: 16px;
+	}
+	.buttons__37e49 {
+		gap: 1px;
+	}
+	.wrapper__6e9f8.selected__6e9f8 {
+		border-radius: 15px !important;
+	}
+	.outer_bf1984 {
+		background: var(--background-tertiary);
+	}
+	.outer_bf1984.interactive_bf1984:hover {
+		background-color: var(--primary-800);
+	}
+	.header_f37cb1 {
+		border: unset;
+		box-shadow: var(--shadow-ledge);
+	}
+	.container__9293f {
+		border: unset;
+		box-shadow: var(--shadow-ledge);
+	}
+	.title_f75fb0 {
+			padding-left: 8px;
+		}
+	.lookLink__201d5.colorPrimary__201d5 {
+		color: var(--text-normal);
+	}
+	/* Emojis/GIF Picker */
+	.drawerSizingWrapper__08434 {
+		right: 0px !important;
+	}
+	.contentWrapper__08434 {
+	    background-color: var(--background-secondary);
+	    border-radius: 8px;
+	    box-shadow: var(--shadow-border), var(--shadow-high);
+		border: unset;
+	}
+	.header_fed6d3, .soundboardHeader__08434 {
+		background-color: var(--background-secondary);
+	    box-shadow: var(--shadow-ledge);
+		border-bottom: unset;
+	}
+	.emojiPicker_c0e32c {
+		background-color: var(--background-secondary);
+		box-shadow: var(--shadow-border), var(--shadow-high);
+		border-bottom-right-radius: var(--custom-emoji-picker-border-radius);
+		border-bottom-left-radius: var(--custom-emoji-picker-border-radius);
+		grid-template-columns: 48px auto;
+		grid-template-rows: auto 1fr auto;
+		height: var(--custom-emoji-picker-constants-emoji-picker-height);
+		width: var(--custom-emoji-picker-constants-min-emoji-picker-width);
+	}
+	.emojiPickerHasTabWrapper_c0e32c .emojiPicker_c0e32c {
+	    background-color: transparent;
+	    border-bottom-right-radius: 0;
+	    border-bottom-left-radius: 0;
+	    box-shadow: none;
+	    flex: 1 1 auto;
+	    grid-template-rows: auto 1fr auto;
+	    height: 100%;
+	    width: auto;
+	}
+	.categoryList_c0e32c {
+		top: 58px;
+	}
+	.expressionPickerCategoryList_a1e0e0 {
+		top: 50px;
+	}
+	.inspector_aeaaeb {
+		background-color: var(--background-secondary-alt);
+		border-top: unset;
+	}
+	.emojiPickerHasTabWrapper_c0e32c .categoryList_c0e32c {
+		top: 50px;
+	}
+	.unicodeShortcut_b9ee0c {
+		box-sizing: unset;
+		border-top: unset;
+	}
+	.wrapper__14245 {
+		background-color: var(--background-secondary);
+	}
+	.wrapper__4e6ce {
+		background-color: var(--background-tertiary);
+	}
+	.header_c0e32c {
+		background-color: var(--background-secondary);
+		box-shadow: var(--shadow-low);
+		margin: 0 -1px;
+		padding: 12px;
+		border-bottom: unset;
+	}
+	.childContainer__91a9d {
+		padding: 2px 0
+	}
+	.clickable__9293f .icon__9293f {
+		color: var(--interactive-normal);
+	}
+	/* channel menus */
+	.header__45690 {
+		background: var(--background-tertiary);
+		border-bottom: 2px solid var(--background-modifier-accent);
+	}
+	.messagesPopoutWrap__45690 {
+		background-color: var(--background-secondary);
+		border-radius: 8px;
+		max-height: 91vh !important;
+	}
+	.messageGroupWrapper__45690 {
+		border: 1px solid var(--background-tertiary);
+	    border-radius: 4px;
+	    -webkit-user-select: none;
+		background: var(--background-primary);
+	    margin-right: unset;
+	}
+	.searchHeader_f3b986 {
+		background: var(--bg-overlay-chat);
+	    height: 48px;
+	    padding: 0 20px;
+		border: unset;
+	}
+	.content__49fc1 {
+		padding-top: unset;
+	}
+	.root__49fc1 {
+		border: none;
+	}
+	.rootWithShadow__49fc1 {
+	    box-shadow: var(--legacy-elevation-border), var(--legacy-elevation-high);
+	}
+}
+
+:root {
+	--font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	--font-headline: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--custom-member-list-width: 240px;
+	--custom-guild-list-width: 72px;
+	--custom-guild-sidebar-width: 375px;
+}
