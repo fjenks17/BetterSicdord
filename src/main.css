@@ -504,3 +504,12 @@ div[class*="stack_dbd263"]{
 	}
 }
 
+:root {
+	--font-primary: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--font-display: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif !important;
+	--font-headline: Whitney, "Helvetica Neue", Helvetica, Arial, sans-serif;
+	--custom-member-list-width: 240px;
+	--custom-guild-list-width: 72px;
+	--custom-guild-sidebar-width: 375px;
+}
+
