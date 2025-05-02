@@ -10,5 +10,6 @@ Thanks for your support.
 
 Disclaimer: I ripped a lot of this from [OldCord](https://github.com/milbits/oldcord). Definitely go check that out if you miss the 2020 layout, I just wanted to cherry pick some of the stuff from there and make some tweaks.
 
+To download: Download BetterSicdord.theme.css (right click, save as) and place it in the Vencord Theme Folder
 
 ![CDN media](https://i.redd.it/tmimiahbprwe1.jpeg)
