@@ -8,4 +8,7 @@ There are bugs that I may or may not fix eventually, but I have a day job that s
 
 Thanks for your support.
 
+Disclaimer: I ripped a lot of this from [OldCord](https://github.com/milbits/oldcord). Definitely go check that out if you miss the 2020 layout, I just wanted to cherry pick some of the stuff from there and make some tweaks.
+
+
 ![CDN media](https://i.redd.it/tmimiahbprwe1.jpeg)
