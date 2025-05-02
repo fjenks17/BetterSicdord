@@ -1,4 +1,4 @@
-# Better Discord
+# Better Sicdord
 
 Because the discord visual rework is ass.
 
