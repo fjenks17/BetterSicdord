@@ -86,6 +86,10 @@ div[class*="stack_dbd263"]{
     background-color: #202020 !important;
 }
 
+.standardStickerShortcut__3ad28{
+	background-color: var(--background-secondary);
+}
+
 /* server list */
 .base_c48ade .sidebar_c48ade > .guilds_c48ade {
     width: 80px;
@@ -512,5 +516,6 @@ div[class*="stack_dbd263"]{
 	--custom-guild-list-width: 72px;
 	--custom-guild-sidebar-width: 375px;
 	--background-floating: #18191c;
+	--background-secondary: color-mix(in oklab, hsl(232.5 calc(1*6.557%) 23.922% /1) 100%, #000 0%);
 }
 
