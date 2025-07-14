@@ -86,10 +86,6 @@ div[class*="stack_dbd263"]{
     background-color: #202020 !important;
 }
 
-.standardStickerShortcut__3ad28{
-	background-color: var(--background-secondary);
-}
-
 /* server list */
 .base_c48ade .sidebar_c48ade > .guilds_c48ade {
     width: 80px;
@@ -216,8 +212,8 @@ div[class*="stack_dbd263"]{
 			border: none;
 	}
 	.folderButtonContent__48112 {
-			margin-left: -5px;
-			margin-top: -4px;
+			/*margin-left: -5px;*/
+			/*margin-top: -4px;*/
 		}
 	.folderIconWrapper__48112 {
 			width: 48px;
@@ -267,6 +263,10 @@ div[class*="stack_dbd263"]{
 	display: none;
 }
 .visual-refresh {
+
+	.unicodeShortcut_b9ee0c{
+		background-color: var(--background-secondary);
+	}
 
 	.childWrapperNoHoverBg__6e9f8 {
 		background-color: var(--background-primary);
