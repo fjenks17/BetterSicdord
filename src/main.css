@@ -68,6 +68,11 @@ div[class*="title__"]{
     background-color: black !important;
 }
 
+div[class*="title_c38106"]{
+    display: none !important;
+    background-color: black !important;
+}
+
 div[class*="bar_c"]{
     background-color: #202020 !important;
 }
@@ -84,6 +89,10 @@ div[aria-label="Servers"] {
 
 div[class*="stack_dbd263"]{
     background-color: #202020 !important;
+}
+
+div[class*="scrollerSpacer__36d07"]{
+	height: 6px !important;
 }
 
 /* server list */
