@@ -178,6 +178,30 @@ div[class*="stack_dbd263"]{
 .sidebar_c48ade:after {
 	display: none;
 }
+.base_b88801 {
+	left: 16px;
+	font-size: 14px;
+	font-weight: 500;
+	line-height: 24px;
+	bottom: 1px !important;
+	top: unset !important;
+	resize: none;
+	align-items: center;
+	color: var(--text-default);
+	strong {
+		font-weight: var(--font-weight-bold) !important;
+	}
+	.text_b88801 {
+		margin-left: 4px !important
+	}
+	.typingDots_b88801 {
+		margin-left: unset;
+	}
+}
+    
+.channelTextArea_f75fb0 {
+	--custom-chat-input-margin-bottom: 24px;
+}
 .base_c48ade .sidebar_c48ade > .guilds_c48ade {
 	width: 72px;
 	background: var(--background-tertiary);
