@@ -58,6 +58,10 @@ nav[aria-label="Servers"] {
     margin-bottom: 0 !important;
 }
 
+._5e434347c823b592-guilds{
+    height: 100% !important;
+}
+
 /* hides the Discover button in Server List */
 div:has(> div > div > svg > foreignObject > div[aria-label="Discover"]) {
     display: none !important;
