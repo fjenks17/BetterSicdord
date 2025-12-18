@@ -58,7 +58,7 @@ nav[aria-label="Servers"] {
     margin-bottom: 0 !important;
 }
 
-._5e434347c823b592-guilds{
+._5e434347c823b592-guilds {
     height: 100% !important;
 }
 
@@ -107,6 +107,11 @@ div[class*="ef3116c2da186559-itemsContainer"] {
 }
 
 html.visual-refresh {
+
+    /*hide discover button */
+    .dbd2630aec71879b-stack.ef3116c2da186559-scroller.d125d22cdfd32cfe-none.d125d22cdfd32cfe-scrollerBase> :nth-last-child(2) {
+        display: none;
+    }
 
     /*servers and channels*/
     ._6e9f8dce4cc18de3-childWrapperNoHoverBg {
@@ -1189,7 +1194,7 @@ html.visual-refresh {
         background: var(--background-base-lowest);
     }
 
-    
+
 
     /* show header elements in a call */
     ._9293f6b2fc12398a-transparent ._9293f6b2fc12398a-children,
