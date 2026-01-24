@@ -56,6 +56,7 @@ section[aria-label="User area"] {
 /* extends the Server List to the bottom of the screen */
 nav[aria-label="Servers sidebar"] {
     margin-bottom: 0 !important;
+    background-color: #202020 !important;
 }
 
 /* hides the Discover button in Server List */
@@ -77,6 +78,10 @@ div[class*="bar_c"]{
     background-color: #202020 !important;
 }
 
+.guilds__5e434 {
+    height: 100% !important;
+}
+
 div[class*="circleIconButton__5bc7e"]{
     z-index: 10 !important;
 }
@@ -85,10 +90,7 @@ div[class*="circleIconButton__5bc7e"]{
 div[aria-label="Servers"] {
     overflow: hidden scroll !important;
     scrollbar-width: none;
-}
-
-div[class*="stack_dbd263"]{
-    background-color: #202020 !important;
+    height: 86.5%
 }
 
 .align-chat-input .scrollerSpacer__36d07 {
@@ -291,11 +293,30 @@ div[class*="stack_dbd263"]{
 		box-shadow: unset;
 		right: 1px;
 	}
-}
+
 .sidebar_c48ade:after {
 	display: none;
 }
 .visual-refresh {
+
+    .folderGroup__48112.isExpanded__48112{
+        .stack_dbd263.folderGuildsList__48112{
+            height: 100% !important;
+        }
+    }
+
+    .stack_dbd263.scroller_ef3116.none_d125d2.scrollerBase_d125d2 {
+        height: 100% !important;
+
+        > :nth-last-child(2){
+            position: absolute;
+            bottom: 10px;
+        }
+        > :nth-last-child(3){
+            position: absolute;
+            bottom: 70px;
+        }
+    }
 
 	.unicodeShortcut_b9ee0c{
 		background-color: var(--background-secondary);
@@ -551,4 +572,3 @@ div[class*="stack_dbd263"]{
 	--background-floating: #18191c;
 	--background-secondary: color-mix(in oklab, hsl(232.5 calc(1*6.557%) 23.922% /1) 100%, #000 0%);
 }
-
