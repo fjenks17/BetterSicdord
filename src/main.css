@@ -90,7 +90,7 @@ div[class*="circleIconButton__5bc7e"]{
 div[aria-label="Servers"] {
     overflow: hidden scroll !important;
     scrollbar-width: none;
-    height: 86.5%
+    height: calc(100% - 175px) !important;
 }
 
 .align-chat-input .scrollerSpacer__36d07 {
