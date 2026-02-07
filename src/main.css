@@ -48,7 +48,7 @@ code {
     font-family: "Source Code Pro";
 }
 
-section[aria-label="User area"] {
+section[aria-label="User status and settings"] {
     left: var(--space-80) !important;
     width: calc(80% - var(--space-xs)*2) !important;
 }
