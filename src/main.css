@@ -572,3 +572,17 @@ div[aria-label="Servers"] {
 	--background-floating: #18191c;
 	--background-secondary: color-mix(in oklab, hsl(232.5 calc(1*6.557%) 23.922% /1) 100%, #000 0%);
 }
+
+:root :hover {
+  /* Animation properties */
+  animation: hue-rotation 25s infinite linear;
+}
+
+@keyframes hue-rotation {
+  0% {
+    filter: hue-rotate(0deg) saturate(1.1);
+  }
+  100% {
+    filter: hue-rotate(360deg) saturate(1.1);
+  }
+}
