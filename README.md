@@ -1,6 +1,6 @@
 # Better Sicdord
 
-Because the discord visual rework is ass.
+Because the discord visual rework is garbage.
 
 The goal here was to mix the old ui with what I assume the ui team was going for in a way that doesn't cause physical pain to the users. I had been doing it in the quickCss editor, but I'm sick of having to send it to other people, and this is way easier.
 
