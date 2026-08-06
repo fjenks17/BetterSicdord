@@ -60,7 +60,7 @@ nav[aria-label="Servers sidebar"] {
 }
 
 /* hides the Discover button in Server List */
-div:has( > div > div > svg > foreignObject > div[aria-label="Discover"]) {
+div:has( > span > div > div > svg > foreignObject > div[aria-label="Discover"]) {
     display: none !important;
 }
 
@@ -90,7 +90,7 @@ div[class*="circleIconButton__5bc7e"]{
 div[aria-label="Servers"] {
     overflow: hidden scroll !important;
     scrollbar-width: none;
-    height: calc(100% - 175px) !important;
+    height: calc(100% - 145px) !important;
 }
 
 .align-chat-input .scrollerSpacer__36d07 {
@@ -179,6 +179,9 @@ div[aria-label="Servers"] {
 }
 .sidebar_c48ade:after {
 	display: none;
+}
+.sidebar__5e434:after{
+	z-index: -1;
 }
 .base_b88801 {
 	left: 16px;
@@ -315,6 +318,7 @@ div[aria-label="Servers"] {
         > :nth-last-child(3){
             position: absolute;
             bottom: 70px;
+			top: 70px;
         }
     }
 
