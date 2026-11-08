@@ -94,7 +94,7 @@ div[aria-label="Servers"] {
 
 /* server list */
 .content_pog62O > .sidebar_pog62O > nav.wrapper_5dqHTG.guilds_pog62O {
-    width: 80px;
+    width: 72px;
     background: var(--background-tertiary);
 	.stack_TWWX0S.scroller_5dqHTG.scrollbarGutterStable_tqapBM.thin_tqapBM.scrollerBase_tqapBM.fade_tqapBM {
 		padding-top: 2px !important;
@@ -197,6 +197,10 @@ div[aria-label="Servers"] {
 	.typingDots_U9Tvvz {
 		margin-left: unset;
 	}
+}
+
+form.form_z_gUBg.formWithLoadedChatInput_z_gUBg {
+	margin-top: -8px;
 }
     
 .channelTextArea_z_gUBg {
@@ -359,8 +363,8 @@ div[aria-label="Servers"] {
 	.sidebarListRounded_pog620 {
 		border-top-left-radius: unset;
 	}
-    .panels_pog620{
-        left: calc(var(--space-80) + 4px) !important;
+    .panels_pog62O {
+        left: calc(var(--space-80)) !important;
         right: calc(var(--space-80) + 4px) !important;
     }
 	.menu_c1e9c4, .option__3f413, .popout__3f413 {
