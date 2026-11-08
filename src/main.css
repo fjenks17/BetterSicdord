@@ -211,6 +211,14 @@ form.form_z_gUBg.formWithLoadedChatInput_z_gUBg {
 	display: none;
 }
 
+.chatGradient_8AE1Qq.chatGradientBase_8AE1Qq {
+    display: none;
+}
+
+.chatTypingGradientAtBottom_8AE1Qq.chatGradientBase_8AE1Qq {
+    display: none;
+}
+
 .base_pog620 .sidebar_pog620 > .guilds_pog620 {
 	width: 72px;
 	background: var(--background-tertiary);
